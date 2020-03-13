@@ -41,6 +41,11 @@ namespace VendorTracker.Models
       return null;
     }
 
+    public void AddOrder(Order order)
+      {
+        OrdersList.Add(order);
+      }
+
 
   }
 }  

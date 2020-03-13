@@ -1,9 +1,9 @@
 @using VendorTracker.Models;
 
-<h3>All Orders in this Vendory:</h3>
+<h3>All Orders in this Vendor:</h3>
 
 <ol>
-  @foreach(Order order in @Model["order"])
+  @foreach(Order order in @Model["orders"])
   {
     <li>@order.Title
       <ul>
