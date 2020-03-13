@@ -13,9 +13,12 @@ namespace VendorTracker.Models
 
     public static List<Order> OrdersList {get; set;} = new List<Order> {};
 
-    public Order(string title)
+    public Order(string title, string description, int price, string date)
     {
       Title = title;
+      Description = description;
+      Price = price;
+      Date = date;
       IncrementId();
       Id = CurrentId;
       OrdersList.Add(this);
