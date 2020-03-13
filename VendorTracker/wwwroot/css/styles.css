@@ -7,3 +7,11 @@ div#footer {
   background:#333;
   padding:8px;
 }
+
+body {
+  background-color: rgb(236, 195, 195);
+  margin: 50 auto;
+  padding: 1em;
+  /* text-align: center; */
+  max-width: 1200px;
+}
