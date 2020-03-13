@@ -52,3 +52,12 @@ input[type=text] {
 button {
   width: 150px;
 }
+
+ol {
+  font-size: 120%;
+}
+
+ul {
+  font-size: 110%;
+  list-style: square inside;
+}

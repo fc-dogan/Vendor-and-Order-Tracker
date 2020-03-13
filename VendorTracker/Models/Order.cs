@@ -45,9 +45,28 @@ namespace VendorTracker.Models
     }
 
     public void AddOrder(Order order)
+    {
+      OrdersList.Add(order);
+    }
+
+    public static void ClearAll()
+    {
+      OrdersList.Clear();
+    }
+
+    public static void Delete(int id)
+    {
+      for (int i = 0; i < OrderList.Count; i++)
       {
-        OrdersList.Add(order);
+        if (OrderList[i] is Order)
+        {
+          if(OrderList[i].Id == id)
+          {
+            OrderList.RemoveAt(i);
+          }
+        }        
       }
+    }
 
 
   }

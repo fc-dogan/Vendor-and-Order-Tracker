@@ -46,6 +46,25 @@ namespace VendorTracker.Models
         }
       }
       return null;
+    }
+
+    public static void ClearAll()
+    {
+      Vendor.Clear();
+    }
+
+    public static void Delete(int id)
+    {
+      for (int i = 0; i < VendorsList.Count; i++)
+      {
+        if (VendorsList[i] is VendorsList)
+        {
+          if(VendorsList[i].Id == id)
+          {
+            VendorsList.RemoveAt(i);
+          }
+        }        
+      }
     }    
 
   }

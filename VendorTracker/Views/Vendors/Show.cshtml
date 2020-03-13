@@ -4,16 +4,16 @@
 
 @using VendorTracker.Models;
 
-<h3>All Orders in this Vendor:</h3>
+<h2>All Orders in this Vendor:</h2>
 
 <ol>
   @foreach(Order order in @Model["orders"])
   {
-    <li>@order.Title
+    <li> <strong>@order.Title</strong>
       <ul>
-        <li>Description: @order.Description</li>
-        <li>Price: @order.Price</li>
-        <li>Date: @order.Date</li>
+        <li><strong>Description: </strong> @order.Description</li>
+        <li><strong>Price: </strong> @order.Price</li>
+        <li><strong>Date: </strong> @order.Date</li>
       </ul>
     </li>
   }
