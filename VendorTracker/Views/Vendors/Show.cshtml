@@ -1,0 +1,20 @@
+@using VendorTracker.Models;
+
+<h3>All Orders in this Vendory:</h3>
+
+<ol>
+  @foreach(Order order in @Model["order"])
+  {
+    <li>@order.Title
+      <ul>
+        <li>Description: @order.Description</li>
+        <li>Price: @order.Price</li>
+        <li>Date: @order.Date</li>
+      </ul>
+    </li>
+  }
+</ol>
+
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new Order</a></p>
+<p><a href='/vendors'>Return to Vendors list</a></p>
+<p><a href='/'>Return to Main Page</a></p>

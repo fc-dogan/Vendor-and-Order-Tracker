@@ -13,10 +13,10 @@ namespace VendorTracker.Models
 
     public static List<Vendor> VendorsList {get; set;} = new List<Vendor> {};
 
-    public Vendor(string name, string description)
+    public Vendor(string name)
     {
       Name = name;
-      Description = description;
+      // Description = description;
       OrdersList = new List <Order>{};
       IncrementId();
       Id = CurrentId;
@@ -41,7 +41,7 @@ namespace VendorTracker.Models
         {
           if(VendorsList[i].Id == id)
           {
-            return Vendors[i];
+            return VendorsList[i];
           }
         }
       }
