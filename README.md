@@ -59,6 +59,7 @@ _No known bugs at this time._
 ## Technologies Used
 
 * C#
+* .Net Core 2.2
 * ASP.NET Core MVC
 * VS Code
 * CSS
