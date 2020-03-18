@@ -61,6 +61,8 @@ _No known bugs at this time._
 * C#
 * ASP.NET Core MVC
 * VS Code
+* CSS
+* Bootstrap
 
 ### License
 
