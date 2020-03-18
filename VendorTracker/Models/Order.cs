@@ -54,19 +54,19 @@ namespace VendorTracker.Models
       OrdersList.Clear();
     }
 
-    public static void Delete(int id)
-    {
-      for (int i = 0; i < OrderList.Count; i++)
-      {
-        if (OrderList[i] is Order)
-        {
-          if(OrderList[i].Id == id)
-          {
-            OrderList.RemoveAt(i);
-          }
-        }        
-      }
-    }
+    // public static void Delete(int id)
+    // {
+    //   for (int i = 0; i < OrderList.Count; i++)
+    //   {
+    //     if (OrderList[i] is Order)
+    //     {
+    //       if(OrderList[i].Id == id)
+    //       {
+    //         OrderList.RemoveAt(i);
+    //       }
+    //     }        
+    //   }
+    // }
 
 
   }

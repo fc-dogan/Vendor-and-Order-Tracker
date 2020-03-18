@@ -13,10 +13,10 @@ namespace VendorTracker.Models
 
     public static List<Vendor> VendorsList {get; set;} = new List<Vendor> {};
 
-    public Vendor(string name)
+    public Vendor(string name, string description)
     {
       Name = name;
-      // Description = description;
+      Description = description;
       OrdersList = new List <Order>{};
       IncrementId();
       Id = CurrentId;
@@ -48,24 +48,24 @@ namespace VendorTracker.Models
       return null;
     }
 
-    public static void ClearAll()
-    {
-      Vendor.Clear();
-    }
+    // public static void ClearAll()
+    // {
+    //   Vendor.Clear();
+    // }
 
-    public static void Delete(int id)
-    {
-      for (int i = 0; i < VendorsList.Count; i++)
-      {
-        if (VendorsList[i] is VendorsList)
-        {
-          if(VendorsList[i].Id == id)
-          {
-            VendorsList.RemoveAt(i);
-          }
-        }        
-      }
-    }    
+    // public static void Delete(int id)
+    // {
+    //   for (int i = 0; i < VendorsList.Count; i++)
+    //   {
+    //     if (VendorsList[i] is VendorsList)
+    //     {
+    //       if(VendorsList[i].Id == id)
+    //       {
+    //         VendorsList.RemoveAt(i);
+    //       }
+    //     }        
+    //   }
+    // }    
 
   }
 }  
