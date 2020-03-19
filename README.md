@@ -25,15 +25,14 @@ MVC application to track the vendors that purchase baked goods from Pierre's bak
 
 ## Setup/Installation Requirements
 
-_In Terminal:_
+#### Prerequisites
 
-* Navigate to where you want this application to be saved, i.e.:
-```cd desktop```
-* Clone the file from GitHub with HTTPS
-```git clone https://github.com/fc-dogan/Vendor-and-Order-Tracker ```
-* Open file in your preferred text editor
-* On Mac: ```open -a {your text editor} ```
-* On Windows: ``````
+```.Net Core SDK```
+* Download the .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download)
+* Open the .Net Core SDK file and install
+* To confirm installation was successful, run the ```$ dotnet --version``` command in your terminal
+
+#### Installing
 
 _Download Manually:_
 
@@ -43,14 +42,26 @@ _Download Manually:_
 * Click downloaded file to unzip.
 * Open folder called "Vendor-and-Order-Tracker".
 
+_In Terminal:_
 
-_Note For Editors:_ 
-* Download the .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download)
-* Open the .Net Core SDK file and install
-* To confirm installation was successful, run the ```$ dotnet --version``` command in your terminal
+* Navigate to where you want this application to be saved, i.e.:
+```cd desktop```
+* Clone the file from GitHub with HTTPS
+```git clone https://github.com/fc-dogan/Vendor-and-Order-Tracker ```
+* Open file in your preferred text editor
+ ```cd Vendor-and-Order-Tracker ```
 
-* Install dotnet script, run the ```$ dotnet tool install -g dotnet-script``` command in your terminal
-* Restart your terminal to complete installation, and run the ```$ dotnet run``` command to run application within your terminal - Note: To exit, simply press ```Ctrl + C```
+_To run this application:_
+
+* Restore all dependencies
+  ``` dotnet restore```
+* Run the program
+  ``` dotnet run```
+   Note: To exit, simply press ```Ctrl + C```
+* Open the local hosted server
+  ``` http://localhost:5000 ```
+
+
 ## Known Bugs
 
 _No known bugs at this time._
