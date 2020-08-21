@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 div#footer {
   position:fixed;
   bottom:0px;
@@ -9,38 +13,48 @@ div#footer {
 }
 
 body {
-  background-color: rgb(238, 209, 209);
   margin: 50 auto;
   padding: 1em;
-  /* text-align: center; */
   max-width: 1200px;
+  background-image: url("../img/vendor-background.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #fff;
+  
 }
 
 h1 {
-  color:  rgb(139, 45, 45);
+  padding: 1em 0;
   text-align: center;
-  padding: 3em;
-  border: solid;
-  box-shadow: 10px 5px 5px #424a6d;
+  background-color: #cca353;
+  font-family: Poppins, sans-serif;
+  color: #fff;
 }
 h2 {
-  box-shadow: 10px 5px 5px #424a6d;
-  color:  rgb(139, 45, 45);
+  color:  #fff;
+  background-color: #cca353;
   margin: 50 auto;
-  border: solid;
-  padding: 2em;
+  font-family: Poppins, sans-serif;
+  padding: 1em;
 }
 
 h3 {
   box-shadow: 10px 5px 5px #424a6d;
   margin: 50 auto;
   padding: 2em;
+  color: #fff;
+}
+
+a{
+  color:  #fff;
 }
 
 
 label, p {
   font-size: 150%;
   /* padding: 12px 20px; */
+  
 }
 
 input[type=text] {
