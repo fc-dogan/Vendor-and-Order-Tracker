@@ -6,10 +6,15 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="~/css/styles.css"  type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
   </head>
   <body>
-    @* <img src="../img/vendor-background.jfif" asp-append-version="true"> *@
-    @RenderBody()
-    @Html.Partial("Footer") 
+			@Html.Partial("Header")
+    <div class="container">
+      @RenderBody()
+			@* <img src="../img/vendor-background.jfif" asp-append-version="true"> *@
+		</div>
+      @Html.Partial("Footer") 
+    
   </body>
 </html>

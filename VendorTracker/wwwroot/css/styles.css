@@ -8,7 +8,7 @@ div#footer {
   left:0px;
   width:100%;
   color:#CCC;
-  background:#333;
+  background:#7a7a7a;
   padding:8px;
 }
 
@@ -24,13 +24,18 @@ body {
   
 }
 
+.container {
+  padding: 70px;
+}
+
 h1 {
-  padding: 1em 0;
+  padding: 70px;
   text-align: center;
   background-color: #cca353;
   font-family: Poppins, sans-serif;
   color: #fff;
 }
+
 h2 {
   color:  #fff;
   background-color: #cca353;
@@ -38,6 +43,7 @@ h2 {
   font-family: Poppins, sans-serif;
   padding: 1em;
 }
+
 
 h3 {
   box-shadow: 10px 5px 5px #424a6d;
@@ -75,4 +81,21 @@ ol {
 ul {
   font-size: 110%;
   list-style: square inside;
+}
+
+#header {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#7a7a7ae1;
+  text-align: right;
+  display: inline-block;
+  padding: 15px ;
+}
+
+#header a{
+  padding: 20px;
+  margin: 1%;
 }
